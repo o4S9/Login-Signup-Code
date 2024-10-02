@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+#Container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    /* margin: 250px 500px 500px; */
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 10px 20px 0px rgb(59, 59, 59);
+
+}
+
+#loginform {
+    display: none;
+}
+
+#underline {
+    margin: 10px 50px 10px 10px;
+}
+
+strong {
+    color: orange;
+}
+
+#l{
+    display: none;
+}
