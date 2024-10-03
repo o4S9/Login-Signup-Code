@@ -2,7 +2,12 @@ let login = document.getElementById("loginform");
         let signup = document.getElementById("signup");
         let btns = document.getElementById("s");
         let btnl = document.getElementById("l");
+        let email = document.getElementById("Email");
+        let pass = document.getElementById("password");
 
+        function submit(){
+                
+        }
 
 
         function Login() {
