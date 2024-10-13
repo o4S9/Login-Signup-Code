@@ -3,31 +3,36 @@ let signup = document.getElementById("signup");
 let btns = document.getElementById("s");
 let btnl = document.getElementById("l");
 
-// function submit(){
-// let email = document.getElementById("email").value;
-// let pass = document.getElementById("password").value;
-// let fname = document.getElementById("name").value;
+
+function loginform() {
+    let email = document.getElementById("email2").value;
+    let password = document.getElementById("password2").value;
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+    }
+    
+        alert("Signup successful!");
+        return true;
+    
 
 
-//     if (email == "" || pass == "" || fname == ""){
-//         alert("Please fill the all information.");
-//     }
-//     else{
-//         alert("Thanks For Sign_UP")
-//     }
-        
-// }
+}
 function submitFrom() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
-    
+
     if (name === "") {
         alert("Full Name is required.");
         return false;
     }
-    
+
     let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (!emailPattern.test(email)) {
         alert("Please enter a valid email address.");
@@ -54,13 +59,12 @@ function Login() {
     signup.style.display = "none";
     btns.style.display = "none";
     btnl.style.display = "block";
-    btnl.style.margin = "20px 180px"
+    btnl.style.width = "100%"
 }
 function SignUp() {
     login.style.display = "none";
     signup.style.display = "block";
     btnl.style.display = "none";
     btns.style.display = "block";
-    btns.style.margin = "20px 160px"
-    // btns.style.textAlign = "center"
+    btns.style.width = "100%";
 }

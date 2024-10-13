@@ -10,59 +10,45 @@
 
 <body>
     <div id="Container">
-        <div>
-            <h1>Welcome To Shopping Center Clothes</h1>
-        </div>
+        <h1 style="text-align: center;">Welcome to Shopping center</h1>
         <form id="signup" onsubmit="return submitFrom()">
-            <h2>Sign-Up</h2>
-            <ul>
-                <li><label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
-                </li>
-                <li> <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
-                </li>
-                <li><label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Create a password" required><br>
-                </li>
-                <li> <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword"
-                        placeholder="Confirm your password" required><br>
-                </li>
-            </ul>
-            <hr>
+            <h2 style="text-align: center;">Sign-Up</h2>
 
-            <h5>You have an account?<strong onclick="Login()">Login</strong></h5>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <button type="submit">Sign Up</button>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+            <button type="submit" id="s">Sign Up</button>
+            <h5 id="btmText">Already have an account? <strong onclick="Login()">Login</strong></h5>
+
         </form>
-        <form action="" id="loginform">
-            <h2>Login</h2>
-            <ul>
-                <li>
-                    <div>
-                        <label for="Email">Email-Add :</label>
-                        <input type="email" name="Email" id="Email2">
-                    </div><br>
-                </li>
-                <li>
-                    <div>
-                        <label for="password">Password :</label>
-                        <input type="password" name="password" id="password2">
-                    </div><br>
-                </li>
-            </ul>
+
+
+    
+        <form  id="loginform" onsubmit="return loginFrom()">
+            <h2 style="text-align: center;">Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
             <br>
-            <hr id="underline">
-            <h5>Create a new account?<strong onclick="SignUp()">SignUp</strong></h5>
+            <button type="submit" id="l">Login</button>
+        <h5 id="btmText">Create a new account?<strong onclick="SignUp()">SignUp</strong></h5>
 
         </form>
+
 
         <!-- <button onsubmit="return submit()" id="s">Sign-Up</button> -->
-        <button onclick="" id="l">Login</button>
-        <br><br>
-
+        <!-- <button onclick="" id="l">Login</button> -->
         <img src="Frame.jpg" alt="Icons image" id="img1">
     </div>
     <script src="script.js">
